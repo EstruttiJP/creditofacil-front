@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu painel · creditofacil</title>
+  <meta name="description" content="Painel do doador: total destinado, doações registradas e histórico (protótipo com dados de exemplo).">
+  <meta name="theme-color" content="#03703D">
+  <link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon-32.png">
+  <link rel="apple-touch-icon" href="imagens/favicon-180.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- cabeçalho: igual em todas as páginas -->
+  <header class="header">
+    <div class="conteudo header-conteudo">
+      <a class="marca" href="index.html" aria-label="creditofacil, página inicial">
+        <img src="imagens/icone-nota.svg" alt="" width="36" height="36">
+        <span class="marca-texto"><span class="marca-credito">credito</span><span class="marca-facil">facil</span></span>
+      </a>
+      <nav class="nav" aria-label="Menu principal">
+        <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="solucao-wizard.html">Como funciona</a></li>
+        <li><a href="solucao-dashboard.html" aria-current="page">Meu painel</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="integrantes.html">Integrantes</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="header-acoes">
+        <a class="btn btn-primario btn-sm" href="solucao-wizard.html">Ativar doação</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- saudação e situação do vínculo -->
+    <section class="sec-topo sec-clara">
+      <div class="conteudo">
+        <span class="selo selo-verde">Doação automática ativa</span>
+        <h1 class="titulo-pagina">Olá, Ana</h1>
+        <p class="lead">Seu cadastro no creditofacil está ativo desde 10/04/2026. Se você já concluiu o passo a passo no site oficial, nada mais precisa ser feito.</p>
+        <p class="ajuda aviso-exemplo">Protótipo: os nomes e valores desta página são dados de exemplo.</p>
+        <details class="como-desfazer">
+          <summary>Como desfazer o vínculo</summary>
+          <p>O vínculo é desfeito no mesmo site da Nota Fiscal Paulista onde você o criou: em Conta Corrente, Doação de Créditos a Entidades, basta desmarcar a doação automática. O creditofacil só orienta.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- números do doador -->
+    <section class="sec">
+      <div class="conteudo">
+        <div class="grade-3">
+          <article class="card card-elev stat-card">
+            <p>Total já destinado</p>
+            <p class="stat-valor">R$ 13,81</p>
+            <p class="ajuda">Desde 10/04/2026</p>
+          </article>
+          <article class="card stat-card">
+            <p>Doações registradas</p>
+            <p class="stat-valor">3</p>
+            <p class="ajuda">Notas já destinadas à Turma do Bem</p>
+          </article>
+          <article class="card stat-card">
+            <p>Última doação</p>
+            <p class="stat-valor">18/09</p>
+            <p class="ajuda">Os créditos são liberados periodicamente pela SEFAZ-SP</p>
+          </article>
+        </div>
+
+        <div class="colunas colunas-esticadas margem-topo">
+          <!-- histórico em tabela -->
+          <section class="col-flex card card-tabela">
+            <div class="card-tabela-topo">
+              <h2 class="t4">Histórico</h2>
+              <span class="selo selo-verde">3 doações</span>
+            </div>
+            <table class="tabela-historico">
+              <caption class="ajuda">Doações geradas a partir das suas notas fiscais</caption>
+              <thead>
+                <tr><th scope="col">Data</th><th scope="col">Origem</th><th scope="col">Situação</th><th scope="col" class="col-valor">Valor</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>18/09/2026</td><td>Nota fiscal · CNPJ 12.345.678/0001-99</td><td>Destinada</td><td class="col-valor">R$ 7,75</td></tr>
+                <tr><td>01/07/2026</td><td>Cupom sem CPF recuperado · CNPJ 45.987.321/0001-10</td><td>Destinada</td><td class="col-valor">R$ 2,25</td></tr>
+                <tr><td>10/04/2026</td><td>Nota fiscal · CNPJ 12.345.678/0001-99</td><td>Destinada</td><td class="col-valor">R$ 3,81</td></tr>
+              </tbody>
+            </table>
+            <p class="ajuda card-tabela-rodape">Valores conforme registrados no creditofacil. O creditofacil não movimenta nenhum recurso.</p>
+          </section>
+
+          <!-- impacto e atalho para cupom -->
+          <aside class="col-lateral-estreita pilha">
+            <section class="impacto-card">
+              <div class="icone-linha">
+                <img src="imagens/icone-nota-branco.svg" alt="">
+                <h2 class="t4">O que isso virou</h2>
+              </div>
+              <p>Cada doação ajuda a Turma do Bem a manter o atendimento odontológico gratuito de adolescentes em situação de vulnerabilidade.</p>
+              <p class="numero-fonte">Fonte: Turma do Bem, apresentação do Challenge FIAP 2026.</p>
+            </section>
+            <section class="card card-verde">
+              <h2 class="t5">Tem cupom sem CPF parado?</h2>
+              <p class="texto-sm">Você ainda pode registrar essas compras pelo envio da foto do cupom.</p>
+              <p class="margem-topo"><a class="btn btn-secundario btn-bloco btn-sm" href="solucao-wizard.html#recuperar-cupom">Enviar um cupom</a></p>
+            </section>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- rodapé: igual em todas as páginas -->
+  <footer class="footer">
+    <div class="conteudo">
+      <div class="footer-grade">
+        <div>
+          <span class="marca-texto"><span class="marca-credito">credito</span><span class="marca-facil">facil</span></span>
+          <p class="footer-texto">O crédito de ICMS da sua Nota Fiscal Paulista vira doação para a Turma do Bem. Sem custo pra você.</p>
+        </div>
+        <div>
+          <h2>Produto</h2>
+          <ul>
+            <li><a href="solucao-wizard.html">Ativar doação automática</a></li>
+            <li><a href="solucao-wizard.html#recuperar-cupom">Recuperar cupom sem CPF</a></li>
+            <li><a href="solucao-dashboard.html">Meu painel</a></li>
+            <li><a href="faq.html">Perguntas frequentes</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Institucional</h2>
+          <ul>
+            <li><a href="sobre.html">Sobre o creditofacil</a></li>
+            <li><a href="sobre.html#turma-do-bem">Turma do Bem</a></li>
+            <li><a href="integrantes.html">Integrantes</a></li>
+            <li><a href="contato.html">Fale com a gente</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Contato</h2>
+          <ul>
+            <li><a href="contato.html">Formulário de contato</a></li>
+            <li><a href="faq.html">Dúvidas sobre ICMS</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="footer-divisor">
+      <div class="footer-legal">
+        <p>creditofacil é uma iniciativa independente de apoio à ONG Turma do Bem. Não somos e não representamos a Secretaria da Fazenda do Estado de São Paulo. Todo o cadastro da doação é feito por você, no site oficial da Nota Fiscal Paulista: nós apenas mostramos o caminho.</p>
+        <p>© 2026 creditofacil · Challenge FIAP</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
