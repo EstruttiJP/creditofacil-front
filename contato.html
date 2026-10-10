@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato · creditofacil</title>
+  <meta name="description" content="Fale com a equipe do creditofacil: dúvidas, problemas no cadastro, sugestões e parcerias.">
+  <meta name="theme-color" content="#03703D">
+  <link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon-32.png">
+  <link rel="apple-touch-icon" href="imagens/favicon-180.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- cabeçalho: igual em todas as páginas -->
+  <header class="header">
+    <div class="conteudo header-conteudo">
+      <a class="marca" href="index.html" aria-label="creditofacil, página inicial">
+        <img src="imagens/icone-nota.svg" alt="" width="36" height="36">
+        <span class="marca-texto"><span class="marca-credito">credito</span><span class="marca-facil">facil</span></span>
+      </a>
+      <nav class="nav" aria-label="Menu principal">
+        <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="solucao-wizard.html">Como funciona</a></li>
+        <li><a href="solucao-dashboard.html">Meu painel</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="integrantes.html">Integrantes</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contato.html" aria-current="page">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="header-acoes">
+        <a class="btn btn-primario btn-sm" href="solucao-wizard.html">Ativar doação</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="sec sec-clara">
+      <div class="conteudo colunas">
+        <!-- informações de contato -->
+        <div class="col-lateral">
+          <span class="selo selo-verde">Contato</span>
+          <h1 class="titulo-pagina">Fale com a gente</h1>
+          <p class="lead">Dúvida sobre o crédito, problema no cadastro, sugestão ou proposta de parceria. Lemos tudo.</p>
+          <ul class="lista-contato">
+            <li class="icone-linha"><img src="imagens/icone-nota.svg" alt=""><div><h2 class="t5">GitHub</h2><p class="texto-sm"><a href="https://github.com/EstruttiJP/creditofacil/issues" target="_blank" rel="noopener">Abra uma issue no repositório do projeto</a></p></div></li>
+            <li class="icone-linha"><img src="imagens/icone-nota.svg" alt=""><div><h2 class="t5">Prazo de resposta</h2><p class="texto-sm">Até 2 dias úteis</p></div></li>
+            <li class="icone-linha"><img src="imagens/icone-nota.svg" alt=""><div><h2 class="t5">Problema no site da SEFAZ?</h2><p class="texto-sm">Aí o canal é o oficial da Nota Fiscal Paulista. A gente não resolve por você, mas explica como abrir o chamado.</p></div></li>
+          </ul>
+        </div>
+        <!-- formulário (protótipo: ainda não envia de verdade) -->
+        <div class="col-flex">
+          <form class="card card-elev cta-ativacao" action="contato.html" method="get">
+            <h2 class="t3">Escreva sua mensagem</h2>
+            <div class="campo-bloco">
+              <label class="rotulo" for="contato-nome">Nome</label>
+              <input class="campo" id="contato-nome" name="nome" type="text" placeholder="Como podemos te chamar" autocomplete="name">
+            </div>
+            <div class="campo-bloco">
+              <label class="rotulo" for="contato-email">E-mail</label>
+              <input class="campo" id="contato-email" name="email" type="email" placeholder="voce@email.com" autocomplete="email">
+            </div>
+            <div class="campo-bloco">
+              <label class="rotulo" for="contato-assunto">Assunto</label>
+              <select class="campo" id="contato-assunto" name="assunto">
+                <option>Dúvida sobre o crédito</option>
+                <option>Problema no passo a passo</option>
+                <option>Sugestão</option>
+                <option>Parceria</option>
+              </select>
+            </div>
+            <div class="campo-bloco">
+              <label class="rotulo" for="contato-mensagem">Mensagem</label>
+              <textarea class="campo area" id="contato-mensagem" name="mensagem" placeholder="Conte o que aconteceu ou o que você quer saber"></textarea>
+            </div>
+            <div class="check-linha">
+              <input type="checkbox" id="contato-copia" name="copia">
+              <label for="contato-copia">Quero receber uma cópia desta mensagem por e-mail.</label>
+            </div>
+            <button type="submit" class="btn btn-primario btn-bloco form-acao">Enviar mensagem</button>
+            <p class="ajuda ajuda-central">Protótipo: nesta versão a mensagem ainda não é enviada.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- rodapé: igual em todas as páginas -->
+  <footer class="footer">
+    <div class="conteudo">
+      <div class="footer-grade">
+        <div>
+          <span class="marca-texto"><span class="marca-credito">credito</span><span class="marca-facil">facil</span></span>
+          <p class="footer-texto">O crédito de ICMS da sua Nota Fiscal Paulista vira doação para a Turma do Bem. Sem custo pra você.</p>
+        </div>
+        <div>
+          <h2>Produto</h2>
+          <ul>
+            <li><a href="solucao-wizard.html">Ativar doação automática</a></li>
+            <li><a href="solucao-wizard.html#recuperar-cupom">Recuperar cupom sem CPF</a></li>
+            <li><a href="solucao-dashboard.html">Meu painel</a></li>
+            <li><a href="faq.html">Perguntas frequentes</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Institucional</h2>
+          <ul>
+            <li><a href="sobre.html">Sobre o creditofacil</a></li>
+            <li><a href="sobre.html#turma-do-bem">Turma do Bem</a></li>
+            <li><a href="integrantes.html">Integrantes</a></li>
+            <li><a href="contato.html">Fale com a gente</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Contato</h2>
+          <ul>
+            <li><a href="contato.html">Formulário de contato</a></li>
+            <li><a href="faq.html">Dúvidas sobre ICMS</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="footer-divisor">
+      <div class="footer-legal">
+        <p>creditofacil é uma iniciativa independente de apoio à ONG Turma do Bem. Não somos e não representamos a Secretaria da Fazenda do Estado de São Paulo. Todo o cadastro da doação é feito por você, no site oficial da Nota Fiscal Paulista: nós apenas mostramos o caminho.</p>
+        <p>© 2026 creditofacil · Challenge FIAP</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
