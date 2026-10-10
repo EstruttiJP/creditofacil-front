@@ -82,12 +82,12 @@ Não há etapa de build. Abra o `index.html` no navegador, em uma tela com 992 p
 ## Autores
 
 | Nome | RM | Turma | LinkedIn | GitHub |
-|---|---|---|---|---|---|
-| João Pedro Estrutti Amaral | 575088 | 1TDSPR | [Linkedin](https://www.linkedin.com/in/joao-pedro-estrutti/) | [GitHub](https://github.com/EstruttiJP) |
-| João Vitor Tinem Silva | 576501 | 1TDSPR | [PREENCHER] | [PREENCHER] |
-| Leonardo Vasconcelos Meireles Barbosa | 576492 | 1TDSPR | [PREENCHER] | [PREENCHER] |
-| Lucas Miguel Lino | 574843 | 1TDSPR | [PREENCHER] | [PREENCHER] |
-| Munir Foresti Assis | 569917 | 1TDSPR | [PREENCHER] | [PREENCHER] |
+|---|---|---|---|---|
+| João Pedro Estrutti Amaral | 575088 | 1TDSPR | [LinkedIn](https://www.linkedin.com/in/joao-pedro-estrutti/) | [GitHub](https://github.com/EstruttiJP) |
+| João Vitor Tinem Silva | 576501 | 1TDSPR | - | - |
+| Leonardo Vasconcelos Meireles Barbosa | 576492 | 1TDSPR | - | - |
+| Lucas Miguel Lino | 574843 | 1TDSPR | - | - |
+| Munir Foresti Assis | 569917 | 1TDSPR | - | - |
 
 ## Links
 
