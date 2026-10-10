@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre o creditofacil</title>
+  <meta name="description" content="O que é o creditofacil, a Turma do Bem, as tecnologias do projeto e o roadmap.">
+  <meta name="theme-color" content="#03703D">
+  <link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon-32.png">
+  <link rel="apple-touch-icon" href="imagens/favicon-180.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- cabeçalho: igual em todas as páginas -->
+  <header class="header">
+    <div class="conteudo header-conteudo">
+      <a class="marca" href="index.html" aria-label="creditofacil, página inicial">
+        <img src="imagens/icone-nota.svg" alt="" width="36" height="36">
+        <span class="marca-texto"><span class="marca-credito">credito</span><span class="marca-facil">facil</span></span>
+      </a>
+      <nav class="nav" aria-label="Menu principal">
+        <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="solucao-wizard.html">Como funciona</a></li>
+        <li><a href="solucao-dashboard.html">Meu painel</a></li>
+        <li><a href="sobre.html" aria-current="page">Sobre</a></li>
+        <li><a href="integrantes.html">Integrantes</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="header-acoes">
+        <a class="btn btn-primario btn-sm" href="solucao-wizard.html">Ativar doação</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- apresentação -->
+    <section class="sec-topo sec-clara">
+      <div class="conteudo">
+        <span class="selo selo-verde">Institucional</span>
+        <h1 class="titulo-pagina">Um pedaço de burocracia fiscal transformado em cuidado</h1>
+        <p class="lead">O creditofacil nasceu de uma constatação simples: muito crédito de ICMS fica parado porque o caminho até ele é confuso e escondido em vários menus. A gente encurtou esse caminho e apontou ele para uma ONG.</p>
+      </div>
+    </section>
+
+    <!-- contexto e solução -->
+    <section class="sec">
+      <div class="conteudo colunas">
+        <div class="col-flex">
+          <article>
+            <h2 class="t2">O problema</h2>
+            <p class="texto">Quem pede CPF na nota em São Paulo recebe de volta parte do ICMS pelo programa Nota Fiscal Paulista. Esse crédito pode ser destinado a entidades sociais, mas quase ninguém sabe que ele existe, e quem sabe raramente encontra a opção no portal oficial.</p>
+          </article>
+          <article class="margem-topo">
+            <h2 class="t2">O que o creditofacil é</h2>
+            <p class="texto">Um guia. Explicamos o que é o crédito, mostramos onde ele está na sua conta e como direcioná-lo, de forma permanente, para uma entidade cadastrada no programa: no nosso caso, a Turma do Bem. Para quem esqueceu o CPF numa compra, o sistema lê a foto do cupom e ajuda a registrar a nota.</p>
+          </article>
+          <article class="margem-topo">
+            <h2 class="t2">O que o creditofacil não é</h2>
+            <p class="texto">Não somos a SEFAZ-SP e não temos vínculo com ela. Não pedimos sua senha, não entramos na sua conta, não preenchemos formulário no seu lugar e não recebemos o dinheiro.</p>
+          </article>
+          <div class="card card-laranja margem-topo icone-linha">
+            <img src="imagens/icone-nota.svg" alt="">
+            <p class="texto-sm">O ícone do creditofacil é um documento fiscal com um coração encaixado. É o que fazemos: pegar um papel burocrático que quase ninguém entende e devolver ele com uma função afetiva.</p>
+          </div>
+        </div>
+        <aside class="col-lateral pilha">
+          <section class="card card-elev" id="turma-do-bem">
+            <h2 class="t4">Turma do Bem</h2>
+            <p class="texto-sm">OSCIP fundada em 2002 que gerencia a maior rede de voluntariado especializado do mundo. No programa Dentista do Bem, cirurgiões-dentistas voluntários atendem em seus consultórios jovens de 11 a 17 anos em situação de vulnerabilidade, com tratamento gratuito até os 18 anos.</p>
+            <hr class="divisor">
+            <p class="texto-sm">Presente nos 26 estados e no Distrito Federal e, fora do Brasil, em 226 cidades de 12 países.</p>
+            <p class="ajuda">Fonte: Turma do Bem, apresentação do Challenge FIAP 2026.</p>
+            <p class="margem-topo"><a class="btn btn-secundario btn-bloco btn-sm" href="contato.html">Falar com a equipe</a></p>
+          </section>
+          <section class="card">
+            <h2 class="t5">Transparência</h2>
+            <p class="texto-sm">Os valores repassados à ONG são divulgados pela Turma do Bem em seu relatório anual. O creditofacil não movimenta nenhum recurso.</p>
+          </section>
+        </aside>
+      </div>
+    </section>
+
+    <!-- tecnologias -->
+    <section class="sec sec-clara sec-bordas">
+      <div class="conteudo">
+        <h2 class="t1">Tecnologias do projeto</h2>
+        <div class="grade-3 margem-topo">
+          <article class="card"><h3 class="t5">Front-end</h3><p class="texto-sm">HTML5 semântico e CSS3, sem framework nem biblioteca externa. Nesta etapa, versão desktop.</p></article>
+          <article class="card"><h3 class="t5">Back-end</h3><p class="texto-sm">Java 21 com Spring Boot 3, API REST com cadastro, consentimento, notas fiscais e doações.</p></article>
+          <article class="card"><h3 class="t5">Banco de dados</h3><p class="texto-sm">PostgreSQL 16 com migrations versionadas pelo Flyway.</p></article>
+          <article class="card"><h3 class="t5">Processamento em lote</h3><p class="texto-sm">Python 3.12: importação de notas por CSV, histórico e relatório de impacto.</p></article>
+          <article class="card"><h3 class="t5">Chatbot</h3><p class="texto-sm">Assistente virtual no IBM Watson Assistant, com intenções e entidades para tirar dúvidas sobre o crédito e a doação.</p></article>
+          <article class="card"><h3 class="t5">Ambiente</h3><p class="texto-sm">Docker Compose para subir banco e API com um comando.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- roadmap -->
+    <section class="sec">
+      <div class="conteudo">
+        <h2 class="t1">Roadmap</h2>
+        <ol class="grade-2 margem-topo">
+          <li class="card"><span class="selo selo-laranja">Sprint 1 · outubro de 2026</span><h3 class="t5">Site institucional e protótipo</h3><p class="texto-sm">Páginas do site, protótipo navegável do passo a passo e do painel, modelagem do banco e das classes.</p></li>
+          <li class="card"><span class="selo selo-verde">Sprint 2 · novembro de 2026</span><h3 class="t5">Interatividade</h3><p class="texto-sm">Site responsivo com JavaScript, chatbot no Telegram e modelo lógico e físico do banco.</p></li>
+          <li class="card"><span class="selo selo-verde">Sprint 3 · 2027</span><h3 class="t5">Integração</h3><p class="texto-sm">Site conectado à API, passo a passo que se adapta à situação de cada pessoa.</p></li>
+          <li class="card"><span class="selo selo-verde">Sprint 4 · 2027</span><h3 class="t5">Publicação</h3><p class="texto-sm">Publicação, testes com usuários e relatório de impacto para a Turma do Bem.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- fontes dos dados citados no site -->
+    <section class="sec sec-clara sec-bordas" id="fontes">
+      <div class="conteudo">
+        <h2 class="t2">Fontes</h2>
+        <ul class="lista-fontes">
+          <li>IBGE. <cite>Pesquisa Nacional de Saúde</cite>, 2023. Dados de saúde bucal citados na página inicial, conforme apresentados pela Turma do Bem no Challenge FIAP 2026.</li>
+          <li>Turma do Bem. Apresentação institucional do Challenge FIAP 2026 (1TDS): história, programas Dentista do Bem e Apolônias do Bem, presença no Brasil e no exterior.</li>
+          <li>Secretaria da Fazenda do Estado de São Paulo. Programa Nota Fiscal Paulista: destinação de créditos de ICMS a entidades. Disponível em: <a href="https://www.nfp.fazenda.sp.gov.br" target="_blank" rel="noopener">www.nfp.fazenda.sp.gov.br</a>.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- rodapé: igual em todas as páginas -->
+  <footer class="footer">
+    <div class="conteudo">
+      <div class="footer-grade">
+        <div>
+          <span class="marca-texto"><span class="marca-credito">credito</span><span class="marca-facil">facil</span></span>
+          <p class="footer-texto">O crédito de ICMS da sua Nota Fiscal Paulista vira doação para a Turma do Bem. Sem custo pra você.</p>
+        </div>
+        <div>
+          <h2>Produto</h2>
+          <ul>
+            <li><a href="solucao-wizard.html">Ativar doação automática</a></li>
+            <li><a href="solucao-wizard.html#recuperar-cupom">Recuperar cupom sem CPF</a></li>
+            <li><a href="solucao-dashboard.html">Meu painel</a></li>
+            <li><a href="faq.html">Perguntas frequentes</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Institucional</h2>
+          <ul>
+            <li><a href="sobre.html">Sobre o creditofacil</a></li>
+            <li><a href="sobre.html#turma-do-bem">Turma do Bem</a></li>
+            <li><a href="integrantes.html">Integrantes</a></li>
+            <li><a href="contato.html">Fale com a gente</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Contato</h2>
+          <ul>
+            <li><a href="contato.html">Formulário de contato</a></li>
+            <li><a href="faq.html">Dúvidas sobre ICMS</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="footer-divisor">
+      <div class="footer-legal">
+        <p>creditofacil é uma iniciativa independente de apoio à ONG Turma do Bem. Não somos e não representamos a Secretaria da Fazenda do Estado de São Paulo. Todo o cadastro da doação é feito por você, no site oficial da Nota Fiscal Paulista: nós apenas mostramos o caminho.</p>
+        <p>© 2026 creditofacil · Challenge FIAP</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
