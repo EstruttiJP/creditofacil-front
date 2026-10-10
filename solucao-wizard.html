@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Como funciona · ativação da doação automática · creditofacil</title>
+  <meta name="description" content="Passo a passo para ativar a doação automática do crédito da Nota Fiscal Paulista para a Turma do Bem.">
+  <meta name="theme-color" content="#03703D">
+  <link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon-32.png">
+  <link rel="apple-touch-icon" href="imagens/favicon-180.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- cabeçalho: igual em todas as páginas -->
+  <header class="header">
+    <div class="conteudo header-conteudo">
+      <a class="marca" href="index.html" aria-label="creditofacil, página inicial">
+        <img src="imagens/icone-nota.svg" alt="" width="36" height="36">
+        <span class="marca-texto"><span class="marca-credito">credito</span><span class="marca-facil">facil</span></span>
+      </a>
+      <nav class="nav" aria-label="Menu principal">
+        <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="solucao-wizard.html" aria-current="page">Como funciona</a></li>
+        <li><a href="solucao-dashboard.html">Meu painel</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="integrantes.html">Integrantes</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="header-acoes">
+        <a class="btn btn-primario btn-sm" href="solucao-wizard.html">Ativar doação</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- apresentação e trilha dos 3 passos (cada passo é um link para a sua seção) -->
+    <section class="sec-topo sec-clara">
+      <div class="conteudo">
+        <span class="selo selo-laranja">Ativação da doação automática</span>
+        <h1 class="titulo-pagina">Vamos juntos até o fim do cadastro</h1>
+        <p class="lead"><strong>O problema:</strong> o crédito da Nota Fiscal Paulista pode ser doado a uma ONG, mas a opção fica escondida no portal oficial e quase ninguém chega até ela. <strong>A solução:</strong> um roteiro curto, tela por tela.</p>
+        <p class="lead">Cada passo abaixo é uma coisa que <strong>você</strong> faz: mostramos a tela, o nome do botão e o que esperar depois. Nada é preenchido automaticamente em seu nome.</p>
+        <nav class="trilha" aria-label="Passos da ativação">
+          <a class="trilha-passo" href="#passo-1"><span class="trilha-numero">1</span><span class="trilha-titulo">Confirmar seus dados</span></a>
+          <span class="trilha-linha"></span>
+          <a class="trilha-passo" href="#passo-2"><span class="trilha-numero">2</span><span class="trilha-titulo">Cadastrar no site oficial</span></a>
+          <span class="trilha-linha"></span>
+          <a class="trilha-passo" href="#passo-3"><span class="trilha-numero">3</span><span class="trilha-titulo">Confirmar o vínculo</span></a>
+        </nav>
+      </div>
+    </section>
+
+    <section class="sec">
+      <div class="conteudo colunas">
+        <div class="col-flex">
+          <!-- passo 1: dados do doador e consentimento -->
+          <form class="card card-elev cta-ativacao passo" id="passo-1" action="#passo-2" method="get">
+            <span class="selo selo-verde">Passo 1 de 3</span>
+            <h2 class="t3">Confirme seus dados</h2>
+            <p>Usamos só para montar o passo a passo certo pro seu caso e para registrar, aqui no creditofacil, as notas e doações vinculadas a você.</p>
+            <div class="campo-bloco">
+              <label class="rotulo" for="wizard-nome">Nome</label>
+              <input class="campo" id="wizard-nome" name="nome" type="text" placeholder="Seu nome completo" autocomplete="name">
+            </div>
+            <div class="campo-bloco">
+              <label class="rotulo" for="wizard-cpf">CPF</label>
+              <input class="campo" id="wizard-cpf" name="cpf" type="text" inputmode="numeric" placeholder="000.000.000-00" autocomplete="off">
+              <p class="ajuda">Não guardamos senha da Nota Fiscal Paulista, só o CPF, para identificar suas notas aqui.</p>
+            </div>
+            <div class="campo-bloco">
+              <label class="rotulo" for="wizard-email">E-mail</label>
+              <input class="campo" id="wizard-email" name="email" type="email" placeholder="voce@email.com" autocomplete="email">
+            </div>
+            <div class="check-linha">
+              <input type="checkbox" id="wizard-aceite" name="consentimento">
+              <label for="wizard-aceite">Autorizo o uso dos meus dados para registrar minhas notas e doações e entendi que o cadastro na SEFAZ-SP é feito por mim.</label>
+            </div>
+            <button type="submit" class="btn btn-primario form-acao">Continuar para o passo 2</button>
+          </form>
+
+          <!-- passo 2: orientação guiada no portal oficial -->
+          <article class="card card-elev cta-ativacao passo" id="passo-2">
+            <span class="selo selo-verde">Passo 2 de 3</span>
+            <h2 class="t3">Marque a doação automática no site oficial</h2>
+            <p>Abra o site da Nota Fiscal Paulista em outra aba e faça login com os seus dados. Depois siga este caminho:</p>
+            <ol class="lista-numerada">
+              <li><p>No menu, clique em <strong>Conta Corrente</strong>.</p></li>
+              <li><p>Escolha <strong>Doação de Créditos a Entidades</strong>.</p></li>
+              <li><p>Procure a entidade <strong>Turma do Bem</strong> e marque a doação <strong>automática</strong>, não a pontual.</p></li>
+              <li><p>Confirme. O site mostra uma mensagem de sucesso: é ela que você confere no passo 3.</p></li>
+            </ol>
+            <div class="linha-botoes margem-topo">
+              <a class="btn btn-primario" href="https://www.nfp.fazenda.sp.gov.br" target="_blank" rel="noopener">Abrir o site oficial</a>
+              <a class="btn btn-secundario" href="#passo-3">Já fiz, ir para o passo 3</a>
+            </div>
+            <p class="ajuda">O link abre em outra aba, no domínio da SEFAZ-SP. Você continua logado só lá.</p>
+          </article>
+
+          <!-- passo 3: confirmação -->
+          <article class="card card-elev cta-ativacao passo" id="passo-3">
+            <span class="selo selo-verde">Passo 3 de 3</span>
+            <h2 class="t3">Confirme o que apareceu no site oficial</h2>
+            <p>Depois de marcar a doação automática, o site da Nota Fiscal Paulista mostra uma mensagem de confirmação. Se ela apareceu, seu vínculo com a Turma do Bem já está ativo.</p>
+            <div class="card card-verde margem-topo">
+              <h3 class="t5">Pronto. A partir de agora é automático.</h3>
+              <p class="texto-sm">Cada nota emitida com seu CPF é destinada pela própria Nota Fiscal Paulista, sem mais nenhuma ação sua.</p>
+            </div>
+            <div class="linha-botoes margem-topo">
+              <a class="btn btn-primario" href="solucao-dashboard.html">Ver meu painel</a>
+              <a class="btn btn-secundario" href="#passo-2">Ainda não terminei</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- coluna lateral de apoio -->
+        <aside class="col-lateral-estreita pilha">
+          <section class="card">
+            <h2 class="t5">O que a gente não faz</h2>
+            <p class="texto-sm">Não logamos por você, não guardamos sua senha e não enviamos nada em seu nome para a SEFAZ-SP. Se algum site pedir sua senha fora do domínio oficial, feche a página.</p>
+          </section>
+          <section class="card card-laranja">
+            <h2 class="t5">Travou em algum passo?</h2>
+            <p class="texto-sm">Cada tela tem uma explicação mais longa na FAQ, e você pode nos escrever.</p>
+            <p class="margem-topo"><a class="btn btn-secundario btn-bloco btn-sm" href="faq.html">Abrir a FAQ</a></p>
+          </section>
+        </aside>
+      </div>
+    </section>
+
+    <!-- caminho secundário: recuperar cupom sem CPF -->
+    <section class="sec sec-clara sec-bordas" id="recuperar-cupom">
+      <div class="conteudo colunas">
+        <div class="col-titulo">
+          <h2 class="t2">Recuperação de cupom sem CPF</h2>
+          <p class="texto">Parte separada do fluxo acima. Só entre aqui se você tem um cupom em que esqueceu de informar o CPF.</p>
+        </div>
+        <form class="col-flex recuperacao-bloco" action="solucao-dashboard.html" method="get">
+          <span class="selo selo-verde">Caso a caso</span>
+          <h3 class="t3">Esqueceu de pedir o CPF na nota?</h3>
+          <p class="texto">Envie a foto do cupom fiscal. A gente lê os dados e você confere antes de registrar. Nada é gravado sem a sua confirmação.</p>
+          <label class="upload-area" for="input-cupom">
+            <img src="imagens/icone-nota.svg" alt="">
+            <span class="upload-titulo">Escolha a foto do cupom</span>
+            <span class="ajuda">JPG ou PNG · até 5 MB · a chave de acesso precisa estar legível</span>
+            <input type="file" id="input-cupom" name="cupom" accept="image/png, image/jpeg">
+          </label>
+          <!-- exemplo estático do que a leitura do cupom devolve -->
+          <div class="exemplo-leitura">
+            <h3>Dados lidos do cupom (exemplo)</h3>
+            <div class="grade-campos">
+              <div><label class="rotulo" for="nota-cnpj">CNPJ do emissor</label><input class="campo" id="nota-cnpj" name="cnpj" value="12.345.678/0001-99"></div>
+              <div><label class="rotulo" for="nota-valor">Valor (R$)</label><input class="campo" id="nota-valor" name="valor" value="152,40"></div>
+              <div><label class="rotulo" for="nota-data">Data de emissão</label><input class="campo" id="nota-data" name="data" type="date" value="2026-09-12"></div>
+            </div>
+            <p class="ajuda">Confira e corrija se precisar. A nota vale se o valor for maior que zero e a emissão for dos últimos 12 meses.</p>
+          </div>
+          <button type="submit" class="btn btn-primario form-acao">Registrar nota e gerar doação</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- rodapé: igual em todas as páginas -->
+  <footer class="footer">
+    <div class="conteudo">
+      <div class="footer-grade">
+        <div>
+          <span class="marca-texto"><span class="marca-credito">credito</span><span class="marca-facil">facil</span></span>
+          <p class="footer-texto">O crédito de ICMS da sua Nota Fiscal Paulista vira doação para a Turma do Bem. Sem custo pra você.</p>
+        </div>
+        <div>
+          <h2>Produto</h2>
+          <ul>
+            <li><a href="solucao-wizard.html">Ativar doação automática</a></li>
+            <li><a href="solucao-wizard.html#recuperar-cupom">Recuperar cupom sem CPF</a></li>
+            <li><a href="solucao-dashboard.html">Meu painel</a></li>
+            <li><a href="faq.html">Perguntas frequentes</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Institucional</h2>
+          <ul>
+            <li><a href="sobre.html">Sobre o creditofacil</a></li>
+            <li><a href="sobre.html#turma-do-bem">Turma do Bem</a></li>
+            <li><a href="integrantes.html">Integrantes</a></li>
+            <li><a href="contato.html">Fale com a gente</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Contato</h2>
+          <ul>
+            <li><a href="contato.html">Formulário de contato</a></li>
+            <li><a href="faq.html">Dúvidas sobre ICMS</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="footer-divisor">
+      <div class="footer-legal">
+        <p>creditofacil é uma iniciativa independente de apoio à ONG Turma do Bem. Não somos e não representamos a Secretaria da Fazenda do Estado de São Paulo. Todo o cadastro da doação é feito por você, no site oficial da Nota Fiscal Paulista: nós apenas mostramos o caminho.</p>
+        <p>© 2026 creditofacil · Challenge FIAP</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
