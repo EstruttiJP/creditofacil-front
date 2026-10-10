@@ -37,38 +37,38 @@
 
   <main>
     <!-- saudação e situação do vínculo -->
-    <section class="sec-topo sec-clara">
+    <article class="sec-topo sec-clara">
       <div class="conteudo">
         <span class="selo selo-verde">Doação automática ativa</span>
         <h1 class="titulo-pagina">Olá, Ana</h1>
-        <p class="lead">Seu cadastro no creditofacil está ativo desde 10/04/2026. Se você já concluiu o passo a passo no site oficial, nada mais precisa ser feito.</p>
+        <p class="lead">Seu cadastro no creditofacil está ativo desde <time datetime="2026-04-10">10/04/2026</time>. Se você já concluiu o passo a passo no site oficial, nada mais precisa ser feito.</p>
         <p class="ajuda aviso-exemplo">Protótipo: os nomes e valores desta página são dados de exemplo.</p>
         <details class="como-desfazer">
           <summary>Como desfazer o vínculo</summary>
           <p>O vínculo é desfeito no mesmo site da Nota Fiscal Paulista onde você o criou: em Conta Corrente, Doação de Créditos a Entidades, basta desmarcar a doação automática. O creditofacil só orienta.</p>
         </details>
       </div>
-    </section>
+    </article>
 
     <!-- números do doador -->
-    <section class="sec">
+    <article class="sec">
       <div class="conteudo">
         <div class="grade-3">
-          <article class="card card-elev stat-card">
+          <section class="card card-elev stat-card">
             <p>Total já destinado</p>
             <p class="stat-valor">R$ 13,81</p>
-            <p class="ajuda">Desde 10/04/2026</p>
-          </article>
-          <article class="card stat-card">
+            <p class="ajuda">Desde <time datetime="2026-04-10">10/04/2026</time></p>
+          </section>
+          <section class="card stat-card">
             <p>Doações registradas</p>
             <p class="stat-valor">3</p>
             <p class="ajuda">Notas já destinadas à Turma do Bem</p>
-          </article>
-          <article class="card stat-card">
+          </section>
+          <section class="card stat-card">
             <p>Última doação</p>
             <p class="stat-valor">18/09</p>
             <p class="ajuda">Os créditos são liberados periodicamente pela SEFAZ-SP</p>
-          </article>
+          </section>
         </div>
 
         <div class="colunas colunas-esticadas margem-topo">
@@ -110,7 +110,7 @@
           </aside>
         </div>
       </div>
-    </section>
+    </article>
   </main>
 
   <!-- rodapé: igual em todas as páginas -->
@@ -121,7 +121,7 @@
           <span class="marca-texto"><span class="marca-credito">credito</span><span class="marca-facil">facil</span></span>
           <p class="footer-texto">O crédito de ICMS da sua Nota Fiscal Paulista vira doação para a Turma do Bem. Sem custo pra você.</p>
         </div>
-        <div>
+        <nav aria-label="Produto">
           <h2>Produto</h2>
           <ul>
             <li><a href="solucao-wizard.html">Ativar doação automática</a></li>
@@ -129,8 +129,8 @@
             <li><a href="solucao-dashboard.html">Meu painel</a></li>
             <li><a href="faq.html">Perguntas frequentes</a></li>
           </ul>
-        </div>
-        <div>
+        </nav>
+        <nav aria-label="Institucional">
           <h2>Institucional</h2>
           <ul>
             <li><a href="sobre.html">Sobre o creditofacil</a></li>
@@ -138,14 +138,14 @@
             <li><a href="integrantes.html">Integrantes</a></li>
             <li><a href="contato.html">Fale com a gente</a></li>
           </ul>
-        </div>
-        <div>
+        </nav>
+        <nav aria-label="Contato">
           <h2>Contato</h2>
           <ul>
             <li><a href="contato.html">Formulário de contato</a></li>
             <li><a href="faq.html">Dúvidas sobre ICMS</a></li>
           </ul>
-        </div>
+        </nav>
       </div>
       <hr class="footer-divisor">
       <div class="footer-legal">

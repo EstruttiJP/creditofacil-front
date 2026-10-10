@@ -37,7 +37,7 @@
 
   <main>
     <!-- apresentação e trilha dos 3 passos (cada passo é um link para a sua seção) -->
-    <section class="sec-topo sec-clara">
+    <article class="sec-topo sec-clara">
       <div class="conteudo">
         <span class="selo selo-laranja">Ativação da doação automática</span>
         <h1 class="titulo-pagina">Vamos juntos até o fim do cadastro</h1>
@@ -51,9 +51,9 @@
           <a class="trilha-passo" href="#passo-3"><span class="trilha-numero">3</span><span class="trilha-titulo">Confirmar o vínculo</span></a>
         </nav>
       </div>
-    </section>
+    </article>
 
-    <section class="sec">
+    <article class="sec">
       <div class="conteudo colunas">
         <div class="col-flex">
           <!-- passo 1: dados do doador e consentimento -->
@@ -82,7 +82,7 @@
           </form>
 
           <!-- passo 2: orientação guiada no portal oficial -->
-          <article class="card card-elev cta-ativacao passo" id="passo-2">
+          <section class="card card-elev cta-ativacao passo" id="passo-2">
             <span class="selo selo-verde">Passo 2 de 3</span>
             <h2 class="t3">Marque a doação automática no site oficial</h2>
             <p>Abra o site da Nota Fiscal Paulista em outra aba e faça login com os seus dados. Depois siga este caminho:</p>
@@ -97,10 +97,10 @@
               <a class="btn btn-secundario" href="#passo-3">Já fiz, ir para o passo 3</a>
             </div>
             <p class="ajuda">O link abre em outra aba, no domínio da SEFAZ-SP. Você continua logado só lá.</p>
-          </article>
+          </section>
 
           <!-- passo 3: confirmação -->
-          <article class="card card-elev cta-ativacao passo" id="passo-3">
+          <section class="card card-elev cta-ativacao passo" id="passo-3">
             <span class="selo selo-verde">Passo 3 de 3</span>
             <h2 class="t3">Confirme o que apareceu no site oficial</h2>
             <p>Depois de marcar a doação automática, o site da Nota Fiscal Paulista mostra uma mensagem de confirmação. Se ela apareceu, seu vínculo com a Turma do Bem já está ativo.</p>
@@ -112,7 +112,7 @@
               <a class="btn btn-primario" href="solucao-dashboard.html">Ver meu painel</a>
               <a class="btn btn-secundario" href="#passo-2">Ainda não terminei</a>
             </div>
-          </article>
+          </section>
         </div>
 
         <!-- coluna lateral de apoio -->
@@ -128,10 +128,10 @@
           </section>
         </aside>
       </div>
-    </section>
+    </article>
 
     <!-- caminho secundário: recuperar cupom sem CPF -->
-    <section class="sec sec-clara sec-bordas" id="recuperar-cupom">
+    <article class="sec sec-clara sec-bordas" id="recuperar-cupom">
       <div class="conteudo colunas">
         <div class="col-titulo">
           <h2 class="t2">Recuperação de cupom sem CPF</h2>
@@ -160,7 +160,7 @@
           <button type="submit" class="btn btn-primario form-acao">Registrar nota e gerar doação</button>
         </form>
       </div>
-    </section>
+    </article>
   </main>
 
   <!-- rodapé: igual em todas as páginas -->
@@ -171,7 +171,7 @@
           <span class="marca-texto"><span class="marca-credito">credito</span><span class="marca-facil">facil</span></span>
           <p class="footer-texto">O crédito de ICMS da sua Nota Fiscal Paulista vira doação para a Turma do Bem. Sem custo pra você.</p>
         </div>
-        <div>
+        <nav aria-label="Produto">
           <h2>Produto</h2>
           <ul>
             <li><a href="solucao-wizard.html">Ativar doação automática</a></li>
@@ -179,8 +179,8 @@
             <li><a href="solucao-dashboard.html">Meu painel</a></li>
             <li><a href="faq.html">Perguntas frequentes</a></li>
           </ul>
-        </div>
-        <div>
+        </nav>
+        <nav aria-label="Institucional">
           <h2>Institucional</h2>
           <ul>
             <li><a href="sobre.html">Sobre o creditofacil</a></li>
@@ -188,14 +188,14 @@
             <li><a href="integrantes.html">Integrantes</a></li>
             <li><a href="contato.html">Fale com a gente</a></li>
           </ul>
-        </div>
-        <div>
+        </nav>
+        <nav aria-label="Contato">
           <h2>Contato</h2>
           <ul>
             <li><a href="contato.html">Formulário de contato</a></li>
             <li><a href="faq.html">Dúvidas sobre ICMS</a></li>
           </ul>
-        </div>
+        </nav>
       </div>
       <hr class="footer-divisor">
       <div class="footer-legal">
