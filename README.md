@@ -85,7 +85,6 @@ Não há etapa de build. Abra o `index.html` no navegador, em uma tela com 992 p
 |---|---|---|---|---|
 | João Pedro Estrutti Amaral | 575088 | 1TDSPR | [LinkedIn](https://www.linkedin.com/in/joao-pedro-estrutti/) | [GitHub](https://github.com/EstruttiJP) |
 | João Vitor Tinem Silva | 576501 | 1TDSPR | [Linkedin](https://www.linkedin.com/in/joão-vitor-tinem-35bbb4442) | [GitHub](https://github.com/JoaoVitorTinem) |
-| Leonardo Vasconcelos Meireles Barbosa | 576492 | 1TDSPR | [Linkedin](https://www.linkedin.com/in/leonardo-meireles-a39667442) | [GitHub](https://github.com/leobarbosaa7-a11y) |
 | Lucas Miguel Lino | 574843 | 1TDSPR | [Linkedin](https://www.linkedin.com/in/lucas230lino) | [GitHub](https://github.com/linorepos) |
 | Munir Foresti Assis | 569917 | 1TDSPR | [Linkedin](https://www.linkedin.com/in/munir-f-assis) | [GitHub](https://github.com/MunirAssis) |
 
