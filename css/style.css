@@ -222,6 +222,16 @@ img {
   margin-top: 16px;
 }
 
+/* titulo lido por leitores de tela, invisivel na tela */
+.visualmente-oculto {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
 /* Componentes */
 .btn {
   display: inline-flex;
@@ -618,7 +628,7 @@ main .card:hover {
 }
 
 .passo + .passo {
-  margin-top: 32px;
+  margin-top: 24px;
 }
 
 .lista-numerada {
@@ -657,9 +667,17 @@ main .card:hover {
   margin-top: 16px;
 }
 
-.stat-card p:first-child {
+.stat-rotulo {
+  font-family: inherit;
   font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.6;
   color: #3d4c44;
+}
+
+.stat-card {
+  border-radius: 20px;
 }
 
 .stat-valor {
@@ -694,7 +712,7 @@ main .card:hover {
 .tabela-historico caption {
   caption-side: bottom;
   text-align: left;
-  padding: 12px 16px 0;
+  padding: 12px 32px 0;
 }
 
 .tabela-historico th {
@@ -705,6 +723,14 @@ main .card:hover {
   font-size: 14px;
   font-weight: 600;
   color: #3d4c44;
+}
+
+.tabela-historico th:first-child, .tabela-historico td:first-child {
+  padding-left: 32px;
+}
+
+.tabela-historico th:last-child, .tabela-historico td:last-child {
+  padding-right: 32px;
 }
 
 .tabela-historico td {
