@@ -8,6 +8,9 @@
   <meta name="theme-color" content="#03703D">
   <link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon-32.png">
   <link rel="apple-touch-icon" href="imagens/favicon-180.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Source+Sans+3:wght@400;600&display=swap">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -55,11 +58,11 @@
             <h2 class="t3">Escreva sua mensagem</h2>
             <div class="campo-bloco">
               <label class="rotulo" for="contato-nome">Nome</label>
-              <input class="campo" id="contato-nome" name="nome" type="text" placeholder="Como podemos te chamar" autocomplete="name">
+              <input class="campo" id="contato-nome" name="nome" type="text" placeholder="Como podemos te chamar" autocomplete="name" required>
             </div>
             <div class="campo-bloco">
               <label class="rotulo" for="contato-email">E-mail</label>
-              <input class="campo" id="contato-email" name="email" type="email" placeholder="voce@email.com" autocomplete="email">
+              <input class="campo" id="contato-email" name="email" type="email" placeholder="voce@email.com" autocomplete="email" required>
             </div>
             <div class="campo-bloco">
               <label class="rotulo" for="contato-assunto">Assunto</label>
@@ -72,7 +75,7 @@
             </div>
             <div class="campo-bloco">
               <label class="rotulo" for="contato-mensagem">Mensagem</label>
-              <textarea class="campo area" id="contato-mensagem" name="mensagem" placeholder="Conte o que aconteceu ou o que você quer saber"></textarea>
+              <textarea class="campo area" id="contato-mensagem" name="mensagem" placeholder="Conte o que aconteceu ou o que você quer saber" required></textarea>
             </div>
             <div class="check-linha">
               <input type="checkbox" id="contato-copia" name="copia">
