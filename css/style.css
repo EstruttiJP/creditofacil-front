@@ -384,6 +384,15 @@ main .card:hover {
   box-shadow: 0 0 0 3px rgba(10, 140, 78, 0.18);
 }
 
+.campo-erro {
+  border-color: #b42318;
+}
+
+.aviso-erro {
+  font-size: 14px;
+  color: #b42318;
+}
+
 .area {
   height: auto;
   min-height: 150px;

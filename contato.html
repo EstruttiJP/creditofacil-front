@@ -61,11 +61,13 @@
             <h2 class="t3">Escreva sua mensagem</h2>
             <div class="campo-bloco">
               <label class="rotulo" for="contato-nome">Nome</label>
-              <input class="campo" id="contato-nome" name="nome" type="text" placeholder="Como podemos te chamar" autocomplete="name" required>
+              <input class="campo" id="contato-nome" name="nome" type="text" placeholder="Como podemos te chamar" autocomplete="name">
+              <p class="aviso-erro" id="aviso-nome"></p>
             </div>
             <div class="campo-bloco">
               <label class="rotulo" for="contato-email">E-mail</label>
-              <input class="campo" id="contato-email" name="email" type="email" placeholder="voce@email.com" autocomplete="email" required>
+              <input class="campo" id="contato-email" name="email" type="email" placeholder="voce@email.com" autocomplete="email">
+              <p class="aviso-erro" id="aviso-email"></p>
             </div>
             <div class="campo-bloco">
               <label class="rotulo" for="contato-assunto">Assunto</label>
@@ -78,13 +80,14 @@
             </div>
             <div class="campo-bloco">
               <label class="rotulo" for="contato-mensagem">Mensagem</label>
-              <textarea class="campo area" id="contato-mensagem" name="mensagem" placeholder="Conte o que aconteceu ou o que você quer saber" required></textarea>
+              <textarea class="campo area" id="contato-mensagem" name="mensagem" placeholder="Conte o que aconteceu ou o que você quer saber"></textarea>
+              <p class="aviso-erro" id="aviso-mensagem"></p>
             </div>
             <div class="check-linha">
               <input type="checkbox" id="contato-copia" name="copia">
               <label for="contato-copia">Quero receber uma cópia desta mensagem por e-mail.</label>
             </div>
-            <button type="submit" class="btn btn-primario btn-bloco form-acao">Enviar mensagem</button>
+            <button type="submit" id="botao-enviar" class="btn btn-primario btn-bloco form-acao">Enviar mensagem</button>
             <p class="ajuda ajuda-central">Protótipo: nesta versão a mensagem ainda não é enviada.</p>
           </form>
         </div>
