@@ -1385,6 +1385,128 @@ main .card:hover {
   }
 }
 
+/* Tablet (768px a 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  body {
+    min-width: 0;
+    overflow-wrap: break-word;
+  }
+  .conteudo {
+    padding: 0 40px;
+  }
+  .sec {
+    padding: 64px 0;
+  }
+  .sec-topo {
+    padding: 56px 0 36px;
+  }
+
+  .colunas {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 40px;
+  }
+  .colunas-centro {
+    align-items: flex-start;
+  }
+  .col-flex {
+    flex: none;
+  }
+  .col-lateral, .col-lateral-estreita, .col-titulo {
+    width: 100%;
+  }
+  .colunas > .pilha {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .grade-3, .grade-campos {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .colunas > .pilha > *, .grade-3 > *, .grade-campos > * {
+    flex: 1 1 40%;
+    min-width: 0;
+  }
+
+  .titulo-hero {
+    font-size: 48px;
+    max-width: none;
+  }
+  .titulo-pagina {
+    font-size: 42px;
+  }
+  .t1 {
+    font-size: 36px;
+  }
+  .t2 {
+    font-size: 30px;
+  }
+  .stat-valor {
+    font-size: 44px;
+  }
+
+  .header .header-conteudo {
+    height: auto;
+    min-height: 72px;
+    flex-wrap: wrap;
+    gap: 12px 16px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+  .header-acoes {
+    margin-left: auto;
+  }
+  .menu-botao {
+    margin-left: 0;
+  }
+  .nav {
+    order: 3;
+    width: 100%;
+  }
+
+  .menu-pronto .menu-botao {
+    display: flex;
+  }
+  .menu-pronto .nav {
+    display: none;
+  }
+  .menu-aberto .nav {
+    display: block;
+    border-top: 1px solid #dce5e0;
+    padding-top: 4px;
+  }
+  .menu-aberto .nav ul {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+  .menu-aberto .nav a {
+    display: block;
+    padding: 12px 0;
+    border-bottom: 1px solid #dce5e0;
+    font-size: 17px;
+  }
+
+  .footer-grade {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  .footer-grade > * {
+    flex: 1 1 40%;
+    min-width: 0;
+  }
+  .footer-texto {
+    max-width: none;
+  }
+  .footer-legal {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
 /* Desktop */
 @media (min-width: 992px) {
   .conteudo {
