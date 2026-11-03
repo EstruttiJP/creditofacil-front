@@ -240,7 +240,7 @@ img {
   gap: 10px;
   height: 56px;
   padding: 0 32px;
-  border-radius: 999px;
+  border-radius: 30px;
   border: 2px solid transparent;
   font-family: "Poppins", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   font-weight: 600;
@@ -255,6 +255,10 @@ img {
   text-decoration: none;
 }
 
+.btn:active {
+  transform: translateY(0);
+}
+
 .btn-primario {
   background: #f46504;
   color: #ffffff;
@@ -264,6 +268,7 @@ img {
 .btn-primario:hover {
   background: #d95703;
   color: #ffffff;
+  box-shadow: 0 10px 22px rgba(244, 101, 4, 0.35);
 }
 
 .btn-secundario {
@@ -298,7 +303,6 @@ img {
   width: 100%;
 }
 
-/* Cartoes */
 .card {
   background: #ffffff;
   border: 1px solid #dce5e0;
@@ -319,6 +323,16 @@ main .card:hover {
 .card-laranja {
   background: #fff4ec;
   border-color: #ffe7d6;
+}
+
+.card-destaque {
+  background: #fff4ec;
+  border-color: #f46504;
+  border-width: 0 0 0 4px;
+}
+
+.card-destaque-direita {
+  border-width: 0 0 3px 3px;
 }
 
 .card-verde {
@@ -573,7 +587,31 @@ main .card:hover {
 }
 
 .upload-area input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.upload-botao {
+  display: inline-flex;
+  align-items: center;
+  height: 44px;
+  padding: 0 22px;
+  border: 2px solid #03703d;
+  border-radius: 30px;
+  background: transparent;
+  color: #03703d;
+  font-family: "Poppins", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 600;
   font-size: 15px;
+  cursor: pointer;
+}
+
+.upload-botao:hover {
+  background: #03703d;
+  color: #ffffff;
 }
 
 .upload-titulo {
@@ -847,9 +885,13 @@ main .card:hover {
   font-size: 20px;
 }
 
+.faq-item summary:hover::after,
+.faq-item[open] summary::after {
+  background: #d8efe2;
+}
+
 .faq-item[open] summary::after {
   content: "−";
-  background: #d8efe2;
 }
 
 .faq-item p {
@@ -979,16 +1021,21 @@ main .card:hover {
   font-weight: 500;
   font-size: 16px;
   color: #3d4c44;
-  text-decoration: none;
+  text-decoration: underline 2px transparent;
+  text-underline-offset: 6px;
+  display: inline-block;
+  transition: color 0.2s, transform 0.2s;
 }
 
 .nav a:hover {
   color: #03703d;
+  transform: translateY(-0.6px);
 }
 
 .nav a[aria-current="page"] {
   color: #03703d;
   font-weight: 600;
+  text-decoration-color: #03703d;
 }
 
 .header-acoes {
@@ -1028,11 +1075,12 @@ main .card:hover {
   text-decoration: none;
   display: block;
   margin-bottom: 10px;
+  transition: color 0.2s, transform 0.2s;
 }
 
 .footer a:hover {
   color: #ffffff;
-  text-decoration: underline;
+  transform: translateX(4px);
 }
 
 .footer .marca-credito {
@@ -1268,9 +1316,6 @@ main .card:hover {
   }
   .faq-item summary {
     font-size: 18px;
-  }
-  .upload-area input {
-    max-width: 100%;
   }
 
   .card-tabela-topo {
