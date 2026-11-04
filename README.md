@@ -21,7 +21,7 @@ Projeto do Challenge FIAP 2026 · 1TDSPR · em parceria com a Turma do Bem.
 ## Tecnologias
 
 - HTML5 semântico
-- CSS3 (arquivo externo único, variáveis CSS, Flexbox e Grid)
+- CSS3
 - JavaScript puro (arquivos externos em `js/`), sem framework e sem biblioteca externa
 - Fontes Poppins e Source Sans 3, carregadas do Google Fonts
 

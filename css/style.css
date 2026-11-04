@@ -8,7 +8,6 @@ html {
 
 body {
   margin: 0;
-  min-width: 992px;
   background: #f6f9f7;
   color: #13211a;
   font-family: "Source Sans 3", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -122,16 +121,20 @@ img {
   flex-shrink: 0;
 }
 
-.grade-2 {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 24px;
+.grade-2, .grade-3 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px 2%;
 }
 
-.grade-3 {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 24px;
+.grade-2 > * {
+  flex: 0 0 49%;
+  min-width: 0;
+}
+
+.grade-3 > * {
+  flex: 0 0 32%;
+  min-width: 0;
 }
 
 .grade-2, .grade-3, .confianca {
@@ -451,10 +454,15 @@ main .card:hover {
 }
 
 .grade-campos {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 2%;
   margin-top: 20px;
+}
+
+.grade-campos > * {
+  flex: 0 0 32%;
+  min-width: 0;
 }
 
 .divisor {
@@ -1051,10 +1059,15 @@ main .card:hover {
 }
 
 .footer-grade {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 48px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 4%;
   padding-bottom: 48px;
+}
+
+.footer-grade > * {
+  flex: 0 0 22%;
+  min-width: 0;
 }
 
 .footer h2 {
@@ -1174,7 +1187,6 @@ main .card:hover {
 /* Mobile */
 @media (max-width: 767px) {
   body {
-    min-width: 0;
     overflow-wrap: break-word;
   }
   .conteudo {
@@ -1202,9 +1214,12 @@ main .card:hover {
     width: 100%;
   }
   .grade-2, .grade-3, .grade-campos {
-    display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
     gap: 24px;
+  }
+  .grade-2 > *, .grade-3 > *, .grade-campos > * {
+    flex: none;
   }
 
   .titulo-hero {
@@ -1363,8 +1378,6 @@ main .card:hover {
     padding: 48px 0 24px;
   }
   .footer-grade {
-    display: flex;
-    flex-wrap: wrap;
     gap: 32px;
     padding-bottom: 32px;
   }
@@ -1433,7 +1446,6 @@ main .card:hover {
 /* Tablet (768px a 991px) */
 @media (min-width: 768px) and (max-width: 991px) {
   body {
-    min-width: 0;
     overflow-wrap: break-word;
   }
   .conteudo {
@@ -1466,9 +1478,17 @@ main .card:hover {
     align-items: flex-start;
   }
 
-  .grade-3, .grade-campos {
-    display: flex;
-    flex-wrap: wrap;
+  .grade-2 {
+    column-gap: 4%;
+  }
+  .grade-2 > * {
+    flex-basis: 48%;
+  }
+  .grade-3 {
+    gap: 24px;
+  }
+  .grade-campos {
+    gap: 16px;
   }
   .colunas > .pilha > *, .grade-3 > *, .grade-campos > * {
     flex: 1 1 40%;
@@ -1535,8 +1555,6 @@ main .card:hover {
   }
 
   .footer-grade {
-    display: flex;
-    flex-wrap: wrap;
     gap: 40px;
   }
   .footer-grade > * {
